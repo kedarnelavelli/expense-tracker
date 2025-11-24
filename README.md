@@ -187,7 +187,7 @@ No password required.
 
 Run tests:
 ```bash
-mvn test
+.\mvnw.cmd test
 ```
 
 
