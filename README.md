@@ -6,7 +6,7 @@ The application supports CRUD operations, sorting, category-wise aggregation, DT
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 - Java 21
 - Spring Boot 3.5
 - Spring Web
@@ -21,15 +21,20 @@ The application supports CRUD operations, sorting, category-wise aggregation, DT
 
 ## Running Locally
 
+Before running this project, ensure you have:
+
+1. **Java 17 or above** installed (required).
+2. **Git** installed (to clone the project).
+
 ### 1. Clone the repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/kedarnelavelli/expense-tracker
 cd expense-tracker
 ```
 
-### 2. Run using Maven
+### 2. Run
 ```bash
-mvn spring-boot:run
+./mvnw spring-boot:run
 ```
 
 ### Base URL:
@@ -39,7 +44,7 @@ http://localhost:8080
 
 ---
 
-## 🗄 H2 Database Console
+## H2 Database Console
 
 **URL:**  
 ```
@@ -153,7 +158,7 @@ No password required.
 
 ---
 
-# ❗ Validation Errors
+#  Validation Errors
 
 ### Request
 ```json
