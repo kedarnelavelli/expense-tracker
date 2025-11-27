@@ -1,6 +1,7 @@
 package com.assignment.expense_tracker.controller;
 
 import com.assignment.expense_tracker.dto.ExpenseDTO;
+import com.assignment.expense_tracker.enums.ExpenseCategory;
 import com.assignment.expense_tracker.repository.ExpenseRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,6 +13,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.math.BigDecimal;
+import java.time.OffsetDateTime;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -39,16 +41,16 @@ class ExpenseControllerTest {
     @Test
     void createExpense_returns201() throws Exception {
         ExpenseDTO dto = ExpenseDTO.builder()
-                .category("Food")
+                .category(ExpenseCategory.FOOD)
                 .amount(BigDecimal.valueOf(150))
-                .date("2025-11-22T09:00:00")
+                .date(OffsetDateTime.now())
                 .build();
 
         mockMvc.perform(post("/api/expenses")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(mapper.writeValueAsString(dto)))
                 .andExpect(status().isCreated())
-                .andExpect(jsonPath("$.category").value("Food"))
+                .andExpect(jsonPath("$.category").value("FOOD"))
                 .andExpect(jsonPath("$.amount").value(150));
     }
 
@@ -56,9 +58,9 @@ class ExpenseControllerTest {
     void getExpenses_afterPost_returnsList() throws Exception {
 
         ExpenseDTO dto = ExpenseDTO.builder()
-                .category("Bills")
+                .category(ExpenseCategory.OTHER)
                 .amount(BigDecimal.valueOf(900))
-                .date("2025-11-22T09:00:00")
+                .date(OffsetDateTime.now())
                 .build();
 
         mockMvc.perform(post("/api/expenses")
@@ -68,22 +70,23 @@ class ExpenseControllerTest {
 
         mockMvc.perform(get("/api/expenses"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].category").value("Bills"));
+                .andExpect(jsonPath("$.content[0].category")
+                        .value(ExpenseCategory.OTHER.name()));
     }
 
     @Test
     void getTopCategories_returnsSortedTotals() throws Exception {
 
         ExpenseDTO e1 = ExpenseDTO.builder()
-                .category("Food")
+                .category(ExpenseCategory.FOOD)
                 .amount(BigDecimal.valueOf(300))
-                .date("2025-11-22T10:00:00")
+                .date(OffsetDateTime.now())
                 .build();
 
         ExpenseDTO e2 = ExpenseDTO.builder()
-                .category("Travel")
+                .category(ExpenseCategory.TRAVEL)
                 .amount(BigDecimal.valueOf(200))
-                .date("2025-11-22T11:00:00")
+                .date(OffsetDateTime.now())
                 .build();
 
         mockMvc.perform(post("/api/expenses")
@@ -96,7 +99,7 @@ class ExpenseControllerTest {
 
         mockMvc.perform(get("/api/expenses/top"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].category").value("Food"))
+                .andExpect(jsonPath("$[0].category").value("FOOD"))
                 .andExpect(jsonPath("$[0].total").value(300));
 
     }
@@ -105,7 +108,7 @@ class ExpenseControllerTest {
     void createExpense_invalidAmount_returns400() throws Exception {
 
         ExpenseDTO dto = ExpenseDTO.builder()
-                .category("Food")
+                .category(ExpenseCategory.FOOD)
                 .amount(BigDecimal.valueOf(-50))
                 .build();
 

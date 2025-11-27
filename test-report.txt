@@ -1,34 +1,7 @@
-mvnw.cmd -Didea.version=2025.2.5 -Dmaven.ext.class.path=C:\Users\kedar\AppData\Local\Programs\IntelliJ IDEA Community Edition 2025.2.5\plugins\maven\lib\maven-event-listener.jar -Djansi.passthrough=true -Dstyle.color=always -Dmaven.repo.local=C:\Users\kedar\.m2\repository test -f pom.xml
-[INFO] Scanning for projects...
-[INFO]
-[INFO] -------------------< com.assignment:expense-tracker >-------------------
-[INFO] Building expense-tracker 0.0.1-SNAPSHOT
-[INFO]   from pom.xml
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO]
-[INFO] --- resources:3.3.1:resources (default-resources) @ expense-tracker ---
-[INFO] Copying 1 resource from src\main\resources to target\classes
-[INFO] Copying 0 resource from src\main\resources to target\classes
-[INFO]
-[INFO] --- compiler:3.14.1:compile (default-compile) @ expense-tracker ---
-[INFO] Nothing to compile - all classes are up to date.
-[INFO]
-[INFO] --- resources:3.3.1:testResources (default-testResources) @ expense-tracker ---
-[INFO] skip non existing resourceDirectory D:\My\Assignments\expense-tracker\src\test\resources
-[INFO]
-[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ expense-tracker ---
-[INFO] Nothing to compile - all classes are up to date.
-[INFO]
-[INFO] --- surefire:3.5.4:test (default-test) @ expense-tracker ---
-[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
-[INFO]
-[INFO] -------------------------------------------------------
-[INFO]  T E S T S
-[INFO] -------------------------------------------------------
-[INFO] Running com.assignment.expense_tracker.controller.ExpenseControllerTest
-09:09:22.804 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.assignment.expense_tracker.controller.ExpenseControllerTest]: ExpenseControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-09:09:22.987 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.assignment.expense_tracker.ExpenseTrackerApplication for test class com.assignment.expense_tracker.controller.ExpenseControllerTest
-09:09:23.203 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+"C:\Program Files\Java\jdk-21\bin\java.exe" -javaagent:C:\Users\kedar\AppData\Local\JetBrains\IdeaIC2025.2\captureAgent\debugger-agent.jar=file:///C:/Users/kedar/AppData/Local/Temp/capture15839183492757891107.props -ea -Didea.test.cyclic.buffer.size=1048576 "-javaagent:C:\Users\kedar\AppData\Local\Programs\IntelliJ IDEA Community Edition 2025.2.5\lib\idea_rt.jar=63236" -Dkotlinx.coroutines.debug.enable.creation.stack.trace=false -Ddebugger.agent.enable.coroutines=true -Dkotlinx.coroutines.debug.enable.flows.stack.trace=true -Dkotlinx.coroutines.debug.enable.mutable.state.flows.stack.trace=true -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath "C:\Users\kedar\.m2\repository\org\junit\platform\junit-platform-launcher\1.12.2\junit-platform-launcher-1.12.2.jar;C:\Users\kedar\AppData\Local\Programs\IntelliJ IDEA Community Edition 2025.2.5\lib\idea_rt.jar;C:\Users\kedar\AppData\Local\Programs\IntelliJ IDEA Community Edition 2025.2.5\plugins\junit\lib\junit6-rt.jar;C:\Users\kedar\AppData\Local\Programs\IntelliJ IDEA Community Edition 2025.2.5\plugins\junit\lib\junit5-rt.jar;C:\Users\kedar\AppData\Local\Programs\IntelliJ IDEA Community Edition 2025.2.5\plugins\junit\lib\junit-rt.jar;D:\My\Assignments\expense-tracker\target\test-classes;D:\My\Assignments\expense-tracker\target\classes;C:\Users\kedar\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.5.8\spring-boot-starter-data-jpa-3.5.8.jar;C:\Users\kedar\.m2\repository\org\springframework\boot\spring-boot-starter\3.5.8\spring-boot-starter-3.5.8.jar;C:\Users\kedar\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.5.8\spring-boot-starter-logging-3.5.8.jar;C:\Users\kedar\.m2\repository\ch\qos\logback\logback-classic\1.5.21\logback-classic-1.5.21.jar;C:\Users\kedar\.m2\repository\ch\qos\logback\logback-core\1.5.21\logback-core-1.5.21.jar;C:\Users\kedar\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Users\kedar\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\kedar\.m2\repository\org\slf4j\jul-to-slf4j\2.0.17\jul-to-slf4j-2.0.17.jar;C:\Users\kedar\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\kedar\.m2\repository\org\yaml\snakeyaml\2.4\snakeyaml-2.4.jar;C:\Users\kedar\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.5.8\spring-boot-starter-jdbc-3.5.8.jar;C:\Users\kedar\.m2\repository\com\zaxxer\HikariCP\6.3.3\HikariCP-6.3.3.jar;C:\Users\kedar\.m2\repository\org\springframework\spring-jdbc\6.2.14\spring-jdbc-6.2.14.jar;C:\Users\kedar\.m2\repository\org\hibernate\orm\hibernate-core\6.6.36.Final\hibernate-core-6.6.36.Final.jar;C:\Users\kedar\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\kedar\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\kedar\.m2\repository\org\jboss\logging\jboss-logging\3.6.1.Final\jboss-logging-3.6.1.Final.jar;C:\Users\kedar\.m2\repository\org\hibernate\common\hibernate-commons-annotations\7.0.3.Final\hibernate-commons-annotations-7.0.3.Final.jar;C:\Users\kedar\.m2\repository\io\smallrye\jandex\3.2.0\jandex-3.2.0.jar;C:\Users\kedar\.m2\repository\com\fasterxml\classmate\1.7.1\classmate-1.7.1.jar;C:\Users\kedar\.m2\repository\net\bytebuddy\byte-buddy\1.17.8\byte-buddy-1.17.8.jar;C:\Users\kedar\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.6\jaxb-runtime-4.0.6.jar;C:\Users\kedar\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.6\jaxb-core-4.0.6.jar;C:\Users\kedar\.m2\repository\org\eclipse\angus\angus-activation\2.0.3\angus-activation-2.0.3.jar;C:\Users\kedar\.m2\repository\org\glassfish\jaxb\txw2\4.0.6\txw2-4.0.6.jar;C:\Users\kedar\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\kedar\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\kedar\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\kedar\.m2\repository\org\springframework\data\spring-data-jpa\3.5.6\spring-data-jpa-3.5.6.jar;C:\Users\kedar\.m2\repository\org\springframework\data\spring-data-commons\3.5.6\spring-data-commons-3.5.6.jar;C:\Users\kedar\.m2\repository\org\springframework\spring-orm\6.2.14\spring-orm-6.2.14.jar;C:\Users\kedar\.m2\repository\org\springframework\spring-context\6.2.14\spring-context-6.2.14.jar;C:\Users\kedar\.m2\repository\org\springframework\spring-aop\6.2.14\spring-aop-6.2.14.jar;C:\Users\kedar\.m2\repository\org\springframework\spring-tx\6.2.14\spring-tx-6.2.14.jar;C:\Users\kedar\.m2\repository\org\springframework\spring-beans\6.2.14\spring-beans-6.2.14.jar;C:\Users\kedar\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\kedar\.m2\repository\org\springframework\spring-aspects\6.2.14\spring-aspects-6.2.14.jar;C:\Users\kedar\.m2\repository\org\aspectj\aspectjweaver\1.9.25\aspectjweaver-1.9.25.jar;C:\Users\kedar\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.5.8\spring-boot-starter-validation-3.5.8.jar;C:\Users\kedar\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.49\tomcat-embed-el-10.1.49.jar;C:\Users\kedar\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.3.Final\hibernate-validator-8.0.3.Final.jar;C:\Users\kedar\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\kedar\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.5.8\spring-boot-starter-web-3.5.8.jar;C:\Users\kedar\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.5.8\spring-boot-starter-json-3.5.8.jar;C:\Users\kedar\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.19.4\jackson-databind-2.19.4.jar;C:\Users\kedar\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.19.4\jackson-annotations-2.19.4.jar;C:\Users\kedar\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.19.4\jackson-core-2.19.4.jar;C:\Users\kedar\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.19.4\jackson-datatype-jdk8-2.19.4.jar;C:\Users\kedar\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.19.4\jackson-datatype-jsr310-2.19.4.jar;C:\Users\kedar\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.19.4\jackson-module-parameter-names-2.19.4.jar;C:\Users\kedar\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.5.8\spring-boot-starter-tomcat-3.5.8.jar;C:\Users\kedar\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.49\tomcat-embed-core-10.1.49.jar;C:\Users\kedar\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.49\tomcat-embed-websocket-10.1.49.jar;C:\Users\kedar\.m2\repository\org\springframework\spring-web\6.2.14\spring-web-6.2.14.jar;C:\Users\kedar\.m2\repository\io\micrometer\micrometer-observation\1.15.6\micrometer-observation-1.15.6.jar;C:\Users\kedar\.m2\repository\io\micrometer\micrometer-commons\1.15.6\micrometer-commons-1.15.6.jar;C:\Users\kedar\.m2\repository\org\springframework\spring-webmvc\6.2.14\spring-webmvc-6.2.14.jar;C:\Users\kedar\.m2\repository\org\springframework\spring-expression\6.2.14\spring-expression-6.2.14.jar;C:\Users\kedar\.m2\repository\org\springframework\boot\spring-boot-devtools\3.5.8\spring-boot-devtools-3.5.8.jar;C:\Users\kedar\.m2\repository\org\springframework\boot\spring-boot\3.5.8\spring-boot-3.5.8.jar;C:\Users\kedar\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.5.8\spring-boot-autoconfigure-3.5.8.jar;C:\Users\kedar\.m2\repository\com\h2database\h2\2.3.232\h2-2.3.232.jar;C:\Users\kedar\.m2\repository\org\projectlombok\lombok\1.18.42\lombok-1.18.42.jar;C:\Users\kedar\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.5.8\spring-boot-starter-test-3.5.8.jar;C:\Users\kedar\.m2\repository\org\springframework\boot\spring-boot-test\3.5.8\spring-boot-test-3.5.8.jar;C:\Users\kedar\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.5.8\spring-boot-test-autoconfigure-3.5.8.jar;C:\Users\kedar\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\kedar\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.4\jakarta.xml.bind-api-4.0.4.jar;C:\Users\kedar\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.4\jakarta.activation-api-2.1.4.jar;C:\Users\kedar\.m2\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Users\kedar\.m2\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Users\kedar\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\kedar\.m2\repository\org\assertj\assertj-core\3.27.6\assertj-core-3.27.6.jar;C:\Users\kedar\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\kedar\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\kedar\.m2\repository\org\junit\jupiter\junit-jupiter\5.12.2\junit-jupiter-5.12.2.jar;C:\Users\kedar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.12.2\junit-jupiter-api-5.12.2.jar;C:\Users\kedar\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\kedar\.m2\repository\org\junit\platform\junit-platform-commons\1.12.2\junit-platform-commons-1.12.2.jar;C:\Users\kedar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kedar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.12.2\junit-jupiter-params-5.12.2.jar;C:\Users\kedar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.12.2\junit-jupiter-engine-5.12.2.jar;C:\Users\kedar\.m2\repository\org\junit\platform\junit-platform-engine\1.12.2\junit-platform-engine-1.12.2.jar;C:\Users\kedar\.m2\repository\org\mockito\mockito-core\5.17.0\mockito-core-5.17.0.jar;C:\Users\kedar\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar;C:\Users\kedar\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\kedar\.m2\repository\org\mockito\mockito-junit-jupiter\5.17.0\mockito-junit-jupiter-5.17.0.jar;C:\Users\kedar\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\kedar\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\kedar\.m2\repository\org\springframework\spring-core\6.2.14\spring-core-6.2.14.jar;C:\Users\kedar\.m2\repository\org\springframework\spring-jcl\6.2.14\spring-jcl-6.2.14.jar;C:\Users\kedar\.m2\repository\org\springframework\spring-test\6.2.14\spring-test-6.2.14.jar;C:\Users\kedar\.m2\repository\org\xmlunit\xmlunit-core\2.10.4\xmlunit-core-2.10.4.jar;C:\Users\kedar\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.8.14\springdoc-openapi-starter-webmvc-ui-2.8.14.jar;C:\Users\kedar\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.8.14\springdoc-openapi-starter-webmvc-api-2.8.14.jar;C:\Users\kedar\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.8.14\springdoc-openapi-starter-common-2.8.14.jar;C:\Users\kedar\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.38\swagger-core-jakarta-2.2.38.jar;C:\Users\kedar\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\kedar\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.38\swagger-annotations-jakarta-2.2.38.jar;C:\Users\kedar\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.38\swagger-models-jakarta-2.2.38.jar;C:\Users\kedar\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.19.4\jackson-dataformat-yaml-2.19.4.jar;C:\Users\kedar\.m2\repository\org\webjars\swagger-ui\5.30.1\swagger-ui-5.30.1.jar;C:\Users\kedar\.m2\repository\org\webjars\webjars-locator-lite\1.1.2\webjars-locator-lite-1.1.2.jar;C:\Users\kedar\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar" com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 @w@C:\Users\kedar\AppData\Local\Temp\idea_working_dirs_junit.tmp @C:\Users\kedar\AppData\Local\Temp\idea_junit.tmp -socket63235
+15:33:02.121 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.assignment.expense_tracker.controller.ExpenseControllerTest]: ExpenseControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:33:02.286 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.assignment.expense_tracker.ExpenseTrackerApplication for test class com.assignment.expense_tracker.controller.ExpenseControllerTest
+15:33:02.419 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -39,18 +12,18 @@ mvnw.cmd -Didea.version=2025.2.5 -Dmaven.ext.class.path=C:\Users\kedar\AppData\L
 
  :: Spring Boot ::                (v3.5.8)
 
-2025-11-24T09:09:23.935+05:30  INFO 31440 --- [           main] c.a.e.controller.ExpenseControllerTest   : Starting ExpenseControllerTest using Java 21.0.9 with PID 31440 (started by kedar in D:\My\Assignments\expense-tracker)
-2025-11-24T09:09:23.937+05:30  INFO 31440 --- [           main] c.a.e.controller.ExpenseControllerTest   : No active profile set, falling back to 1 default profile: "default"
-2025-11-24T09:09:25.116+05:30  INFO 31440 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-24T09:09:25.191+05:30  INFO 31440 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interface.
-2025-11-24T09:09:25.769+05:30  INFO 31440 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-24T09:09:25.833+05:30  INFO 31440 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.36.Final
-2025-11-24T09:09:25.885+05:30  INFO 31440 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-11-24T09:09:26.336+05:30  INFO 31440 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-24T09:09:26.372+05:30  INFO 31440 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-11-24T09:09:26.602+05:30  INFO 31440 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:expensedb user=SA
-2025-11-24T09:09:26.606+05:30  INFO 31440 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-11-24T09:09:26.683+05:30  INFO 31440 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-11-27T15:33:02.663+05:30  INFO 10308 --- [           main] c.a.e.controller.ExpenseControllerTest   : Starting ExpenseControllerTest using Java 21.0.9 with PID 10308 (started by kedar in D:\My\Assignments\expense-tracker)
+2025-11-27T15:33:02.664+05:30  INFO 10308 --- [           main] c.a.e.controller.ExpenseControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2025-11-27T15:33:03.294+05:30  INFO 10308 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-27T15:33:03.352+05:30  INFO 10308 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2025-11-27T15:33:03.798+05:30  INFO 10308 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-27T15:33:03.856+05:30  INFO 10308 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-11-27T15:33:03.877+05:30  INFO 10308 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-27T15:33:04.113+05:30  INFO 10308 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-27T15:33:04.137+05:30  INFO 10308 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-27T15:33:04.268+05:30  INFO 10308 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:expensedb user=SA
+2025-11-27T15:33:04.269+05:30  INFO 10308 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-27T15:33:04.309+05:30  INFO 10308 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -58,24 +31,28 @@ mvnw.cmd -Didea.version=2025.2.5 -Dmaven.ext.class.path=C:\Users\kedar\AppData\L
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-11-24T09:09:27.698+05:30  INFO 31440 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-27T15:33:04.903+05:30  INFO 10308 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate:
     create table expenses (
         id bigint generated by default as identity,
         amount numeric(38,2) not null,
-        category varchar(255) not null,
-        date timestamp(6) not null,
+        category enum ('FOOD','OTHER','SHOPPING','TRAVEL','UTILITIES') not null,
+        created_at timestamp(6) with time zone not null,
+        date timestamp(6) with time zone not null,
         notes varchar(255),
+        updated_at timestamp(6) with time zone not null,
         primary key (id)
     )
-2025-11-24T09:09:27.795+05:30  INFO 31440 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-24T09:09:28.282+05:30  INFO 31440 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-11-24T09:09:29.434+05:30  WARN 31440 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-11-24T09:09:29.923+05:30  INFO 31440 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:expensedb'
-2025-11-24T09:09:29.998+05:30  INFO 31440 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-11-24T09:09:29.998+05:30  INFO 31440 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-11-24T09:09:30.000+05:30  INFO 31440 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2025-11-24T09:09:30.028+05:30  INFO 31440 --- [           main] c.a.e.controller.ExpenseControllerTest   : Started ExpenseControllerTest in 6.841 seconds (process running for 8.295)
+2025-11-27T15:33:04.946+05:30  INFO 10308 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-27T15:33:05.189+05:30  INFO 10308 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-27T15:33:05.813+05:30  WARN 10308 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-27T15:33:06.095+05:30  INFO 10308 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:expensedb'
+2025-11-27T15:33:06.145+05:30  INFO 10308 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-11-27T15:33:06.145+05:30  INFO 10308 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-11-27T15:33:06.147+05:30  INFO 10308 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-11-27T15:33:06.178+05:30  INFO 10308 --- [           main] c.a.e.controller.ExpenseControllerTest   : Started ExpenseControllerTest in 3.759 seconds (process running for 4.672)
+2025-11-27T15:33:06.181+05:30  WARN 10308 --- [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2025-11-27T15:33:06.181+05:30  WARN 10308 --- [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
 Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
 WARNING: A Java agent has been loaded dynamically (C:\Users\kedar\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
@@ -87,27 +64,29 @@ Hibernate:
         e1_0.id,
         e1_0.amount,
         e1_0.category,
+        e1_0.created_at,
         e1_0.date,
-        e1_0.notes
+        e1_0.notes,
+        e1_0.updated_at
     from
         expenses e1_0
-2025-11-24T09:09:30.849+05:30  INFO 31440 --- [           main] c.a.e.controller.ExpenseController       : Creating expense: ExpenseDTO(id=null, category=Food, amount=300, date=2025-11-22T10:00:00, notes=null)
+2025-11-27T15:33:06.576+05:30  INFO 10308 --- [           main] c.a.e.controller.ExpenseController       : Creating expense: ExpenseDTO(id=null, category=FOOD, amount=300, date=2025-11-27T10:03:06.475674100Z, notes=null)
 Hibernate:
     insert
     into
         expenses
-        (amount, category, date, notes, id)
+        (amount, category, created_at, date, notes, updated_at, id)
     values
-        (?, ?, ?, ?, default)
-2025-11-24T09:09:30.921+05:30  INFO 31440 --- [           main] c.a.e.controller.ExpenseController       : Creating expense: ExpenseDTO(id=null, category=Travel, amount=200, date=2025-11-22T11:00:00, notes=null)
+        (?, ?, ?, ?, ?, ?, default)
+2025-11-27T15:33:06.630+05:30  INFO 10308 --- [           main] c.a.e.controller.ExpenseController       : Creating expense: ExpenseDTO(id=null, category=TRAVEL, amount=200, date=2025-11-27T10:03:06.475674100Z, notes=null)
 Hibernate:
     insert
     into
         expenses
-        (amount, category, date, notes, id)
+        (amount, category, created_at, date, notes, updated_at, id)
     values
-        (?, ?, ?, ?, default)
-2025-11-24T09:09:30.927+05:30  INFO 31440 --- [           main] c.a.e.controller.ExpenseController       : Fetching top 3 categories
+        (?, ?, ?, ?, ?, ?, default)
+2025-11-27T15:33:06.636+05:30  INFO 10308 --- [           main] c.a.e.controller.ExpenseController       : Fetching top 3 categories
 Hibernate:
     select
         e1_0.category,
@@ -118,13 +97,17 @@ Hibernate:
         e1_0.category
     order by
         sum(e1_0.amount) desc
+    fetch
+        first ? rows only
 Hibernate:
     select
         e1_0.id,
         e1_0.amount,
         e1_0.category,
+        e1_0.created_at,
         e1_0.date,
-        e1_0.notes
+        e1_0.notes,
+        e1_0.updated_at
     from
         expenses e1_0
 Hibernate:
@@ -139,30 +122,35 @@ Hibernate:
         expenses
     where
         id=?
+2025-11-27T15:33:06.703+05:30  WARN 10308 --- [           main] c.a.e.exception.GlobalExceptionHandler   : Validation failed: [amount: Amount must be positive, date: Date is required]
 Hibernate:
     select
         e1_0.id,
         e1_0.amount,
         e1_0.category,
+        e1_0.created_at,
         e1_0.date,
-        e1_0.notes
+        e1_0.notes,
+        e1_0.updated_at
     from
         expenses e1_0
-2025-11-24T09:09:31.068+05:30  INFO 31440 --- [           main] c.a.e.controller.ExpenseController       : Creating expense: ExpenseDTO(id=null, category=Food, amount=150, date=2025-11-22T09:00:00, notes=null)
+2025-11-27T15:33:06.716+05:30  INFO 10308 --- [           main] c.a.e.controller.ExpenseController       : Creating expense: ExpenseDTO(id=null, category=FOOD, amount=150, date=2025-11-27T10:03:06.714960100Z, notes=null)
 Hibernate:
     insert
     into
         expenses
-        (amount, category, date, notes, id)
+        (amount, category, created_at, date, notes, updated_at, id)
     values
-        (?, ?, ?, ?, default)
+        (?, ?, ?, ?, ?, ?, default)
 Hibernate:
     select
         e1_0.id,
         e1_0.amount,
         e1_0.category,
+        e1_0.created_at,
         e1_0.date,
-        e1_0.notes
+        e1_0.notes,
+        e1_0.updated_at
     from
         expenses e1_0
 Hibernate:
@@ -171,31 +159,37 @@ Hibernate:
         expenses
     where
         id=?
-2025-11-24T09:09:31.088+05:30  INFO 31440 --- [           main] c.a.e.controller.ExpenseController       : Creating expense: ExpenseDTO(id=null, category=Bills, amount=900, date=2025-11-22T09:00:00, notes=null)
+2025-11-27T15:33:06.726+05:30  INFO 10308 --- [           main] c.a.e.controller.ExpenseController       : Creating expense: ExpenseDTO(id=null, category=OTHER, amount=900, date=2025-11-27T10:03:06.725190200Z, notes=null)
 Hibernate:
     insert
     into
         expenses
-        (amount, category, date, notes, id)
+        (amount, category, created_at, date, notes, updated_at, id)
     values
-        (?, ?, ?, ?, default)
-2025-11-24T09:09:31.098+05:30  INFO 31440 --- [           main] c.a.e.controller.ExpenseController       : Fetching expenses, sortBy = null
+        (?, ?, ?, ?, ?, ?, default)
+2025-11-27T15:33:06.731+05:30  INFO 10308 --- [           main] c.a.e.controller.ExpenseController       : Fetching expenses, page=0, size=10, sortBy=NONE
 Hibernate:
     select
         e1_0.id,
         e1_0.amount,
         e1_0.category,
+        e1_0.created_at,
         e1_0.date,
-        e1_0.notes
+        e1_0.notes,
+        e1_0.updated_at
     from
         expenses e1_0
-    order by
-        e1_0.date desc
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.523 s -- in com.assignment.expense_tracker.controller.ExpenseControllerTest
-[INFO] Running com.assignment.expense_tracker.ExpenseTrackerApplicationTests
-2025-11-24T09:09:31.139+05:30  INFO 31440 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.assignment.expense_tracker.ExpenseTrackerApplicationTests]: ExpenseTrackerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-11-24T09:09:31.163+05:30  INFO 31440 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.assignment.expense_tracker.ExpenseTrackerApplication for test class com.assignment.expense_tracker.ExpenseTrackerApplicationTests
-2025-11-24T09:09:31.173+05:30  INFO 31440 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+    offset
+        ? rows
+    fetch
+        first ? rows only
+2025-11-27T15:33:06.738+05:30  WARN 10308 --- [           main] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-11-27T15:33:06.749+05:30  INFO 10308 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.assignment.expense_tracker.ExpenseTrackerApplicationTests]: ExpenseTrackerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-27T15:33:06.797+05:30  INFO 10308 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.assignment.expense_tracker.ExpenseTrackerApplication for test class com.assignment.expense_tracker.ExpenseTrackerApplicationTests
+2025-11-27T15:33:06.800+05:30  INFO 10308 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -206,17 +200,17 @@ Hibernate:
 
  :: Spring Boot ::                (v3.5.8)
 
-2025-11-24T09:09:31.237+05:30  INFO 31440 --- [           main] c.a.e.ExpenseTrackerApplicationTests     : Starting ExpenseTrackerApplicationTests using Java 21.0.9 with PID 31440 (started by kedar in D:\My\Assignments\expense-tracker)
-2025-11-24T09:09:31.238+05:30  INFO 31440 --- [           main] c.a.e.ExpenseTrackerApplicationTests     : No active profile set, falling back to 1 default profile: "default"
-2025-11-24T09:09:31.427+05:30  INFO 31440 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-24T09:09:31.444+05:30  INFO 31440 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
-2025-11-24T09:09:31.525+05:30  INFO 31440 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-24T09:09:31.528+05:30  INFO 31440 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-11-24T09:09:31.538+05:30  INFO 31440 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-24T09:09:31.539+05:30  INFO 31440 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2025-11-24T09:09:31.540+05:30  INFO 31440 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:expensedb user=SA
-2025-11-24T09:09:31.542+05:30  INFO 31440 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2025-11-24T09:09:31.542+05:30  INFO 31440 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-11-27T15:33:06.813+05:30  INFO 10308 --- [           main] c.a.e.ExpenseTrackerApplicationTests     : Starting ExpenseTrackerApplicationTests using Java 21.0.9 with PID 10308 (started by kedar in D:\My\Assignments\expense-tracker)
+2025-11-27T15:33:06.814+05:30  INFO 10308 --- [           main] c.a.e.ExpenseTrackerApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-11-27T15:33:07.213+05:30  INFO 10308 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-27T15:33:07.219+05:30  INFO 10308 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-11-27T15:33:07.269+05:30  INFO 10308 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-27T15:33:07.270+05:30  INFO 10308 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-27T15:33:07.274+05:30  INFO 10308 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-27T15:33:07.275+05:30  INFO 10308 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-11-27T15:33:07.276+05:30  INFO 10308 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:expensedb user=SA
+2025-11-27T15:33:07.276+05:30  INFO 10308 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-11-27T15:33:07.276+05:30  INFO 10308 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -224,22 +218,18 @@ Hibernate:
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-11-24T09:09:31.571+05:30  INFO 31440 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-11-24T09:09:31.581+05:30  INFO 31440 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-24T09:09:31.638+05:30  WARN 31440 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-11-24T09:09:31.718+05:30  INFO 31440 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:expensedb'
-2025-11-24T09:09:31.736+05:30  INFO 31440 --- [           main] c.a.e.ExpenseTrackerApplicationTests     : Started ExpenseTrackerApplicationTests in 0.564 seconds (process running for 10.004)
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.607 s -- in com.assignment.expense_tracker.ExpenseTrackerApplicationTests
-[INFO] Running com.assignment.expense_tracker.service.ExpenseServiceTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.821 s -- in com.assignment.expense_tracker.service.ExpenseServiceTest
-[INFO]
-[INFO] Results:
-[INFO]
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
-[INFO]
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  13.608 s
-[INFO] Finished at: 2025-11-24T09:09:32+05:30
-[INFO] ------------------------------------------------------------------------
+2025-11-27T15:33:07.315+05:30  INFO 10308 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-27T15:33:07.317+05:30  INFO 10308 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-27T15:33:07.359+05:30  WARN 10308 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-27T15:33:07.404+05:30  INFO 10308 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:expensedb'
+2025-11-27T15:33:07.413+05:30  INFO 10308 --- [           main] c.a.e.ExpenseTrackerApplicationTests     : Started ExpenseTrackerApplicationTests in 0.614 seconds (process running for 5.907)
+2025-11-27T15:33:07.413+05:30  WARN 10308 --- [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2025-11-27T15:33:07.413+05:30  WARN 10308 --- [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2025-11-27T15:33:07.608+05:30  INFO 10308 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-27T15:33:07.610+05:30  INFO 10308 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-27T15:33:07.611+05:30  INFO 10308 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-27T15:33:07.613+05:30  INFO 10308 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-27T15:33:07.613+05:30  INFO 10308 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-11-27T15:33:07.636+05:30  INFO 10308 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+
+Process finished with exit code 0

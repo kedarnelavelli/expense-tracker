@@ -1,8 +1,10 @@
 package com.assignment.expense_tracker.dto;
 
+import com.assignment.expense_tracker.enums.ExpenseCategory;
 import jakarta.validation.constraints.*;
 import lombok.*;
 import java.math.BigDecimal;
+import java.time.OffsetDateTime;
 
 @Data
 @Builder
@@ -12,18 +14,15 @@ public class ExpenseDTO {
 
     private Long id;
 
-    @NotBlank(message = "Category is required")
-    private String category;
+    @NotNull(message = "Category is required")
+    private ExpenseCategory category;
 
     @NotNull(message = "Amount is required")
     @Positive(message = "Amount must be positive")
     private BigDecimal amount;
 
-    @Pattern(
-            regexp = "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?$",
-            message = "Date must be ISO datetime: yyyy-MM-dd'T'HH:mm[:ss]"
-    )
-    private String date;
+    @NotNull(message = "Date is required")
+    private OffsetDateTime date;
 
     private String notes;
 }
