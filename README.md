@@ -70,21 +70,21 @@ No password required.
 ### Request Body
 ```json
 {
-  "category": "Food",
-  "amount": 250,
-  "date": "2025-11-22T10:00:00",
-  "notes": "Lunch at cafe"
+  "category": "FOOD",
+  "amount": 50,
+  "date": "2025-12-22T00:00:00+05:30",
+  "notes": "Refreshers"
 }
 ```
 
 ### Response (201 CREATED)
 ```json
 {
-  "id": 1,
-  "category": "Food",
-  "amount": 250,
-  "date": "2025-11-22T10:00:00",
-  "notes": "Lunch at cafe"
+  "id": 3,
+  "category": "FOOD",
+  "amount": 50,
+  "date": "2025-12-21T18:30:00Z",
+  "notes": "Refreshers"
 }
 ```
 
@@ -95,22 +95,56 @@ No password required.
 
 ### Response
 ```json
-[
-  {
-    "id": 1,
-    "category": "Food",
-    "amount": 250,
-    "date": "2025-11-22T10:00:00",
-    "notes": "Lunch at cafe"
+{
+  "content": [
+    {
+      "id": 1,
+      "category": "FOOD",
+      "amount": 300.00,
+      "date": "2025-12-21T18:30:00Z",
+      "notes": "Updated lunch"
+    },
+    {
+      "id": 2,
+      "category": "FOOD",
+      "amount": 50.00,
+      "date": "2025-12-21T18:30:00Z",
+      "notes": "Refreshers"
+    },
+    {
+      "id": 3,
+      "category": "FOOD",
+      "amount": 50.00,
+      "date": "2025-12-21T18:30:00Z",
+      "notes": "Refreshers"
+    }
+  ],
+  "pageable": {
+    "pageNumber": 0,
+    "pageSize": 10,
+    "sort": {
+      "empty": true,
+      "sorted": false,
+      "unsorted": true
+    },
+    "offset": 0,
+    "paged": true,
+    "unpaged": false
   },
-  {
-    "id": 2,
-    "category": "Travel",
-    "amount": 500,
-    "date": "2025-11-21T08:30:00",
-    "notes": "Cab ride"
-  }
-]
+  "last": true,
+  "totalElements": 3,
+  "totalPages": 1,
+  "size": 10,
+  "number": 0,
+  "sort": {
+    "empty": true,
+    "sorted": false,
+    "unsorted": true
+  },
+  "first": true,
+  "numberOfElements": 3,
+  "empty": false
+}
 ```
 
 ### Sorting  
@@ -124,21 +158,22 @@ No password required.
 ### Request
 ```json
 {
-  "category": "Travel",
+  "id" : 1,
+  "category": "FOOD",
   "amount": 300,
-  "date": "2025-11-23T12:00:00",
-  "notes": "Updated travel"
+  "date": "2025-12-22T00:00:00+05:30",
+  "notes": "Updated lunch"
 }
 ```
 
 ### Response
 ```json
 {
-  "id": 2,
-  "category": "Travel",
+  "id": 1,
+  "category": "FOOD",
   "amount": 300,
-  "date": "2025-11-23T12:00:00",
-  "notes": "Updated travel"
+  "date": "2025-12-21T18:30:00Z",
+  "notes": "Updated lunch"
 }
 ```
 
@@ -150,9 +185,10 @@ No password required.
 ### Response
 ```json
 [
-  { "category": "Food", "total": 600 },
-  { "category": "Travel", "total": 400 },
-  { "category": "Grocery", "total": 200 }
+  {
+    "category": "FOOD",
+    "total": 400.00
+  }
 ]
 ```
 
@@ -163,9 +199,7 @@ No password required.
 ### Request
 ```json
 {
-  "category": "",
-  "amount": -50,
-  "date": "invalid"
+  "amount": -50
 }
 ```
 
@@ -177,8 +211,7 @@ No password required.
   "message": "Validation failed",
   "errors": [
     "category: Category is required",
-    "amount: Amount must be positive",
-    "date: must be in ISO date-time format"
+    "amount: Amount must be positive"
   ]
 }
 ```
